@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.today.CaseView">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rr1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sad"
+            android:id="@+id/happy"
+            android:layout_marginTop="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dr_name"
+            android:layout_below="@+id/happy"
+            android:textSize="26sp"
+            android:layout_marginTop="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hi, Dr. Akhil !!"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/pro"
+        android:background="@drawable/bg_card"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/rr1"
+        android:layout_alignStart="@+id/rr1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The time for prescription has expired. What would you like to do?"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/msg"
+            android:id="@+id/view_case_details"
+            android:text="View Case Details"
+            android:textColor="@color/white"
+            android:layout_height="30dp"
+            android:background="@color/Amber"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/cancle"
+            android:text="Request Time"
+            android:textColor="@color/white"
+            android:layout_below="@+id/view_case_details"
+            android:layout_height="30dp"
+            android:background="@color/Amber"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

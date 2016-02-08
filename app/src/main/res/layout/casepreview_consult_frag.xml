@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E0E0E0"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/about_rl"
+        android:background="@drawable/bg_card"
+        android:id="@+id/relativeLayout">
+
+        <!--1st row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/age"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23yrs"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/occupation"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Occupation"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Self"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+       <!-- 2nd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ll"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/height"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150cm"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/weight"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="55kg"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bmi"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BMI"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16.5kg"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 3rd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ll2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/smoking"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smoking"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2-3"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/drink"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drink"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/exercise"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exercise"/>
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width = "40dp"
+                        android:layout_margin="2dp"
+                        android:layout_height="1dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rr"
+    android:layout_below="@+id/ll3">
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:text="ADDICTION"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey"
+            android:textColor="@color/white"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/hairfall"
+            android:textAlignment="viewStart"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@color/Grey"
+            android:focusable="false"
+            android:layout_alignTop="@+id/hairfall"
+            android:layout_toEndOf="@+id/hairfall"
+            android:id="@+id/imageView13" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/plus"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/imageView15"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/imageView13" />
+</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr"
+            android:layout_margin="10dp"
+            android:text="Addicted to caffine, Addicted to other drugs"
+            android:id="@+id/txtrr"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rr1"
+            android:layout_below="@+id/txtrr">
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="ALLERGIES"
+                android:layout_marginTop="5dp"
+                android:background="@color/Grey"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/adic"
+                android:textAlignment="viewStart"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/Grey"
+                android:focusable="false"
+                android:layout_alignTop="@+id/adic"
+                android:layout_toEndOf="@+id/adic"
+                android:id="@+id/imageView14" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/plus"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/imageView16"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/imageView14" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr1"
+            android:layout_margin="10dp"
+            android:text="Allergic to smoke and dust"
+            android:id="@+id/txtrr1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rr2"
+            android:layout_below="@+id/txtrr1">
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:text="MAJOR ILLNESS"
+                android:layout_marginTop="5dp"
+                android:background="@color/Grey"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/maj"
+                android:textAlignment="viewStart"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/Grey"
+                android:focusable="false"
+                android:layout_alignTop="@+id/maj"
+                android:layout_toEndOf="@+id/maj"
+                android:id="@+id/imageView17" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/plus"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/imageView18"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/imageView17" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rr2"
+            android:layout_margin="10dp"
+            android:text="No major illnesses"
+            android:id="@+id/txtrr3"/>
+    </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="PRESCRIBE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

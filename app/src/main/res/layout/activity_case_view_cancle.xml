@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.today.CaseView">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/pro"
+        android:background="@drawable/bg_card"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/submit"
+        android:layout_centerHorizontal="true">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p"
+                android:text="Personal"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pr"
+
+                android:text="Professional"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/oth"
+                android:checked="true"
+                android:text="Others"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/other"
+                android:background="@drawable/login_edit_bord"
+                android:layout_height="45dp" />
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sad"
+        android:id="@+id/imageView7"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason for Cancellation ?"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

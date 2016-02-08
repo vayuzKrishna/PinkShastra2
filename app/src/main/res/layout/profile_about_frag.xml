@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/about_rl"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="About : "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Health care management consultant. Involvement in marketing, hospital tie ups and business developments. "
+            android:id="@+id/about"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/about_rl"
+        android:id="@+id/rr_view"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <View android:id="@+id/separator"
+            android:background="@color/colorPrimary"
+            android:layout_width = "70dp"
+            android:layout_margin="2dp"
+            android:layout_height="1dip"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/spec_rl"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rr_view"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Specialization : "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Gynecologist "
+            android:id="@+id/spec"
+            android:paddingTop="3dp"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spec_rl"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <View android:id="@+id/d"
+            android:background="@color/colorPrimary"
+            android:layout_width = "70dp"
+            android:layout_margin="2dp"
+            android:layout_height="1dip"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

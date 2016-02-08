@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eb008b</color>
+    <color name="colorPrimaryDark">#C2185B</color>
+    <color name="colorAccent">#eb008b</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="white_20">#33FFFFFF</color>
+
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#FF63727B</color>
+
+
+    <!--PrimaryColor-->
+
+
+    <color name="Red">#F44336</color>
+    <color name="Pink">#E91E63</color>
+    <color name="Purple">#673AB7</color>
+    <color name="Indigo">#3F51B5</color>
+    <color name="Blue">#2196F3</color>
+    <color name="LightBlue">#03A9F4</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="Teal">#009688</color>
+    <color name="Green">#4CAF50</color>
+    <color name="LightGreen">#8BC34A</color>
+    <color name="Lime">#CDDC39</color>
+    <color name="Yellow">#FFEB3B</color>
+    <color name="Amber">#FFC107</color>
+    <color name="Orange">#FF5722</color>
+    <color name="Brown">#795548</color>
+    <color name="BlueGrey">#607D8B</color>
+    <color name="Grey">#757575</color>
+    <color name="lightGrey">#E0E0E0</color>
+
+
+
+
+
+    <!--Status bar color primaryDark-->
+
+
+    <color name="Red700">#D32F2F</color>
+    <color name="Pink700">#C2185B</color>
+    <color name="Purple700">#7B1FA2</color>
+    <color name="Indigo700">#303F9F</color>
+    <color name="Blue700">#1976D2</color>
+    <color name="LightBlue700">#0288D1</color>
+    <color name="Cyan700">#0097A7</color>
+    <color name="Teal700">#00796B</color>
+    <color name="Green700">#388E3C</color>
+    <color name="LightGreen700">#689F38</color>
+    <color name="Lime700">#AFB42B</color>
+    <color name="Yellow700">#FBC02D</color>
+    <color name="Amber700">#FFA000</color>
+    <color name="Orange700">#E64A19</color>
+    <color name="Brown700">#5D4037</color>
+    <color name="BlueGrey700">#455A64</color>
+
+
+
+    <integer-array name="custom_tab_colors">
+        <item>@color/colorPrimary</item>
+        <item>@color/cyan_500</item>
+        <item>@color/Teal</item>
+        <item>@color/Green</item>
+        <item>@color/LightGreen</item>
+    </integer-array>
+
+
+</resources>

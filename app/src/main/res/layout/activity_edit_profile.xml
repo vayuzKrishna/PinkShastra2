@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.editprofile.EditProfile">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:background="@drawable/bg_card"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hi, Dr. Akhil."
+            android:id="@+id/textView17" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="What would you like to update ?"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/textView17"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:id="@+id/textView18" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/textView18"
+    android:layout_marginTop="40dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/ab"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ab" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/co"
+        android:id="@+id/co" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/ed"
+        android:layout_below="@+id/co"
+        android:layout_alignLeft="@+id/co"
+        android:layout_alignStart="@+id/co"
+        android:id="@+id/ed" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/ex"
+        android:id="@+id/ex"
+        android:layout_alignTop="@+id/ed"
+        android:layout_alignLeft="@+id/ab"
+        android:layout_alignStart="@+id/ab" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/dr"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

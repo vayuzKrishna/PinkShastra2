@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.today.casepreviewtabs.ViewPrescription">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/rr0"
+            android:background="@drawable/bg_card"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/circle"
+                        android:id="@+id/imageView12" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:layout_marginTop="10dp"
+                        android:textSize="36sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:layout_alignTop="@+id/imageView12"
+                        android:layout_alignStart="@+id/imageView12" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Akhil Sharma"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/about"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Male "/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/location"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text=" Delhi IN"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rrn"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/rr0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:id="@+id/rrm2"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <!-- sample xml -->
+                <include
+                    android:id="@+id/sample1"
+                    layout="@layout/textitem" />
+                <include
+                    android:id="@+id/sample2"
+                    layout="@layout/textitem" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rrn"
+            android:layout_margin="10dp"
+            android:id="@+id/rrbt"
+            android:background="@drawable/bg_card"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_rl"
+                android:id="@+id/relativeLayout">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rr"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="30dp"
+                        android:text="Medicine 1"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/Grey"
+                        android:textColor="@color/white"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rel"
+                        android:textAlignment="viewStart"
+                        android:layout_below="@+id/Problem"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@color/Grey"
+                        android:focusable="false"
+                        android:layout_alignTop="@+id/rel"
+                        android:layout_toEndOf="@+id/rel"
+                        android:id="@+id/imageView1" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/plus"
+                        android:layout_above="@+id/bonepain"
+                        android:layout_alignEnd="@+id/imageView1"
+                        android:id="@+id/imageView2" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card"
+                    android:layout_margin="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/rrmclick"
+                    android:layout_below="@+id/rr">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rr55">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medicine name "
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView9" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": Sanjeevani Vati"
+                                android:layout_column="1"
+                                android:id="@+id/medname"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingTop="3dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView9"
+                                android:layout_toEndOf="@+id/textView9" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Frequency "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView10" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 2 times in a day"
+                                android:id="@+id/freq"
+                                android:layout_column="1" />
+
+
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="  15 ml before meal"
+                                android:id="@+id/freq1"
+                                android:layout_column="1"
+                                android:paddingTop="3dp"
+                                android:layout_below="@+id/textView10"
+                                android:layout_alignLeft="@+id/freq"
+                                android:layout_alignStart="@+id/freq" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="  15 ml after meal"
+                                android:id="@+id/freq2"
+                                android:layout_column="1"
+                                android:paddingTop="3dp"
+                                android:layout_below="@+id/freq1"
+                                android:layout_alignLeft="@+id/freq1"
+                                android:layout_alignStart="@+id/freq1" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Duration "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView12" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 15 Days"
+                                android:id="@+id/dur"
+                                android:layout_marginRight="98dp"
+                                android:paddingTop="3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="99dp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Gap between dosages "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView13" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 5hrs"
+                                android:id="@+id/gap"
+                                android:layout_marginRight="10dp"
+                                android:paddingTop="3dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView13"
+                                android:layout_toEndOf="@+id/textView13" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Note"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView14" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": Can take in case of SOS"
+                                android:id="@+id/note"
+                                android:layout_column="1"
+                                android:layout_marginRight="113dp"
+                                android:paddingTop="3dp"
+                                android:layout_marginEnd="113dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+                        </TableRow>
+                    </TableLayout>
+
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/rrmclick"
+                    android:id="@+id/rr2"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="30dp"
+                        android:text="Medicine 2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/Grey"
+                        android:textColor="@color/white"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/hairfall"
+                        android:textAlignment="viewStart"
+                        android:layout_below="@+id/Problem"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="@color/Grey"
+                        android:focusable="false"
+                        android:layout_alignTop="@+id/hairfall"
+                        android:layout_toEndOf="@+id/hairfall"
+                        android:id="@+id/imageView13" />
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/plus"
+                        android:layout_marginTop="12dp"
+                        android:layout_above="@+id/bonepain"
+                        android:layout_alignEnd="@+id/imageView13"
+                        android:id="@+id/imageView15" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card"
+                    android:layout_margin="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/rrmed2"
+                    android:layout_below="@+id/rr2">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rr5">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medicine name "
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView99" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": Sanjeevani Vati"
+                                android:layout_column="1"
+                                android:id="@+id/medname1"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingTop="3dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView9"
+                                android:layout_toEndOf="@+id/textView9" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Frequency "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView100" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 2 times in a day"
+                                android:id="@+id/freq11"
+                                android:layout_column="1" />
+
+
+
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="  15 ml before meal"
+                                android:id="@+id/freq12"
+                                android:layout_column="1"
+                                android:paddingTop="3dp"
+                                android:layout_below="@+id/textView10"
+                                android:layout_alignLeft="@+id/freq"
+                                android:layout_alignStart="@+id/freq" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="  15 ml after meal"
+                                android:id="@+id/freq22"
+                                android:layout_column="1"
+                                android:paddingTop="3dp"
+                                android:layout_below="@+id/freq1"
+                                android:layout_alignLeft="@+id/freq1"
+                                android:layout_alignStart="@+id/freq1" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Duration "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView122" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 15 Days"
+                                android:id="@+id/dur1"
+                                android:layout_marginRight="98dp"
+                                android:paddingTop="3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="99dp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Gap between dosages "
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView131" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": 5hrs"
+                                android:id="@+id/gap1"
+                                android:layout_marginRight="10dp"
+                                android:paddingTop="3dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/textView13"
+                                android:layout_toEndOf="@+id/textView13" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Note"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/textView141" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text=": Can take in case of SOS"
+                                android:id="@+id/note1"
+                                android:layout_column="1"
+                                android:layout_marginRight="113dp"
+                                android:paddingTop="3dp"
+                                android:layout_marginEnd="113dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true" />
+                        </TableRow>
+                    </TableLayout>
+
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:layout_below="@+id/rrbt"
+            android:id="@+id/casei"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

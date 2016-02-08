@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E0E0E0"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.today.CasePreview">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/app_bar"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/pro"
+            android:background="@drawable/bg_card"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/circle"
+                        android:id="@+id/imageView12" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:layout_marginTop="10dp"
+                        android:textSize="36sp"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"
+                        android:layout_alignTop="@+id/imageView12"
+                        android:layout_alignStart="@+id/imageView12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Akhil Sharma"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/white"
+                        android:background="@color/Amber"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Today, 6:00 pm"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textView12" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/mobilegray"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pro"
+            android:id="@+id/coor"
+            android:layout_height="wrap_content">
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viewpagertab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:stl_defaultTabTextColor="@color/colorPrimary"
+                app:stl_dividerColor="@color/colorPrimary"
+                app:stl_defaultTabTextHorizontalPadding="24dp"
+                app:stl_indicatorColor="@color/colorPrimary"
+                app:stl_indicatorInterpolation="linear"
+                app:stl_indicatorThickness="3dp"
+                app:stl_underlineThickness="1dp"
+                />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prescribe"
+                android:text="PRESCRIBE"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.CalanderView">
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/rr1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_card"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:background="@color/Amber"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:id="@+id/textView15"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/calendarView"
+            android:layout_alignEnd="@+id/calendarView" />
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_arrowColor="?attr/colorPrimary"
+            app:mcv_selectionColor="?attr/colorPrimary"
+            app:mcv_headerTextAppearance="?android:attr/textAppearanceLarge"
+            app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+            app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium"
+            app:mcv_weekDayLabels="@array/custom_weekdays"
+            app:mcv_monthLabels="@array/custom_months"
+            app:mcv_tileSize="36dp"
+            app:mcv_firstDayOfWeek="monday"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_card"
+        android:layout_below="@+id/rr1"
+        android:id="@+id/rr2"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:id="@+id/view2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akhil Sharma"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view2"
+            android:layout_toEndOf="@+id/view2"
+            android:id="@+id/textView13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:00pm"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_card"
+        android:layout_below="@+id/rr2"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/green_circle"
+            android:id="@+id/view3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Krishna Thakur"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view3"
+            android:layout_toEndOf="@+id/view3"
+            android:id="@+id/textView14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:00pm"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="com.pinkshastra.vayuz.pinkshastra.today.casepreviewtabs.Prescription">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar_act"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/app_bar">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/rr1"
+        android:background="@drawable/bg_card"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle"
+                    android:id="@+id/imageView12" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginTop="10dp"
+                    android:textSize="36sp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/imageView12"
+                    android:layout_alignStart="@+id/imageView12" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Akhil Sharma"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/about"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Male "/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/location"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=" Delhi IN"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:background="@drawable/bg_card"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginBottom="10dp"
+       android:id="@+id/rrbtn"
+       android:layout_below="@+id/rr1"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rr"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="15dp"
+           android:layout_below="@+id/ll3">
+           <Button
+               android:layout_width="280dp"
+               android:layout_height="30dp"
+               android:text="Add Medicine"
+               android:layout_marginTop="15dp"
+               android:background="@color/white"
+               android:textColor="@color/colorPrimary"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/hairfall"
+               android:textAlignment="center"/>
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:padding="10dp"
+           android:id="@+id/rr3"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Medicine 1"
+
+               android:id="@+id/textView21"
+               android:layout_marginTop="45dp" />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="Medicine 2"
+               android:id="@+id/med2"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/textView21"
+               android:layout_alignStart="@+id/textView21" />
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:id="@+id/imageView11"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/cross"
+               android:layout_above="@+id/med2"
+               android:layout_toEndOf="@+id/textView21" />
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:background="@drawable/cross"
+               android:id="@+id/imageView23"
+               android:layout_marginLeft="5dp"
+               android:layout_alignTop="@+id/med2"
+               android:layout_toEndOf="@+id/med2" />
+       </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_below="@+id/rr3">
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:id="@+id/sol"
+        android:hint="Solution"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/login_edit_bord"
+        android:scrollbars="vertical"/>
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:maxLines="10"
+        android:hint="Additional tests"
+        android:layout_below="@+id/sol"
+        android:id="@+id/addrem"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/login_edit_bord"
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addrem"
+        android:id="@+id/date"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="Review Date"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:id="@+id/chbox"
+        android:text="Next review not required"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/chbox"/>
+
+</RelativeLayout>
+
+   </RelativeLayout>
+
+
+</RelativeLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/checkBox"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="109dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView22"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/clck"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="10:34"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/imageView22"
+        android:layout_alignStart="@+id/imageView22" />
+
+
+    <requestFocus/>
+</RelativeLayout>

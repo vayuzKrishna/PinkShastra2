@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E0E0E0"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/about_rl"
+        android:background="@drawable/bg_card"
+        android:id="@+id/relativeLayout">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/rr"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:text="Related Consultation"
+        android:layout_marginTop="5dp"
+        android:background="@color/Grey"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rel"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/Problem"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@color/Grey"
+        android:focusable="false"
+        android:layout_alignTop="@+id/rel"
+        android:layout_toEndOf="@+id/rel"
+        android:id="@+id/imageView1" />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/plus"
+        android:layout_above="@+id/bonepain"
+        android:layout_alignEnd="@+id/imageView1"
+        android:id="@+id/imageView2" />
+</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/rr"
+            android:text="Case Id : CA12345677"
+            android:id="@+id/etrr"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/etrr"
+            android:id="@+id/rr2"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:text="Other Consultation"
+            android:layout_marginTop="5dp"
+            android:background="@color/Grey"
+            android:textColor="@color/white"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/hairfall"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/Problem"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@color/Grey"
+            android:focusable="false"
+            android:layout_alignTop="@+id/hairfall"
+            android:layout_toEndOf="@+id/hairfall"
+            android:id="@+id/imageView13" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/plus"
+            android:layout_marginTop="12dp"
+            android:layout_above="@+id/bonepain"
+            android:layout_alignEnd="@+id/imageView13"
+            android:id="@+id/imageView15" />
+
+    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/rr2"
+            android:text="Case Id : CA12345679"
+            android:id="@+id/etrr2"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="PRESCRIBE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

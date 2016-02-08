@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pinkshastra.vayuz.pinkshastra">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/generalnotitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Nav"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".discovery.Discovery" />
+        <activity
+            android:name=".profile.Profile"
+            android:label="PROFILE"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.CaseView"
+            android:label="Case Id: CA12345678"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.CasePreview"
+            android:label="CASE DETAILS"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".today.CaseView" />
+        </activity>
+        <activity
+            android:name=".today.CaseViewCancle"
+            android:label="CANCEL"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.CaseViewReschedule"
+            android:label="RESCHEDULE REQUEST"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.casepreviewtabs.ViewPrescription"
+            android:label="Prescription View"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".CalanderView"
+            android:label="APPOINTMENT"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".editprofile.EditProfile"
+            android:label="EDIT PROFILE"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".editprofile.EditProfileSlides"
+            android:label="EDIT PROFILE"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.casepreviewtabs.Prescription"
+            android:label="Prescription"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".today.AddMed"
+            android:label="Add Medicine"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:label="Notification"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".Confirmation"
+            android:label="Prescription Sent"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".pending.ExpiredView"
+            android:label="Case Id: CA12345678"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Nav" />
+        </activity>
+        <activity
+            android:name=".pending.TimeRequest"
+            android:label="Time Request"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PrescriptionHistory" />
+        <activity android:name=".Statistics"></activity>
+    </application>
+
+</manifest>
